@@ -72,7 +72,7 @@ Aşağıdaki komut ile bu komut .bashrc dosyasına eklenir.
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 ```
 
-Çalışma alanının doğru bir şekilde ortamın üzerine bindirildiğinden emin olmak için ROS_PACKAGE_PATH ortamının çalışma alanının olduğu klasörü içermesi beklenir. Bunun için şu komut yazılır:
+Çalışma alanının doğru bir şekilde ortamın üzerine bindirildiğinden emin olmak için ROS\_PACKAGE\_PATH ortamının çalışma alanının olduğu klasörü içermesi beklenir. Bunun için şu komut yazılır:
 
 ```
 echo $ROS_PACKAGE_PATH
@@ -90,3 +90,7 @@ Komutun döndürmesi beklenen sonuç şudur:
 Bir robot kontrol sistemi genellikle birçok düğümden meydana gelir. Örneğin; lazer mesafe ölçeri kontrol eden düğüm, robotun tekerlek motorlarını kontrol eden düğüm vs.
 
 Bu <b>düğüm</b>ler hakkındaki bilgileri görüntülemek için `rosnode` komutu kullanılır. Bu komut info, kill, list gibi parametreler alır.
+
+# ROS Topic Nedir?
+
+ROS sistemindeki <b>düğüm</b>ler birbirleriyle <b>topic</b>'ler aracılığıyla haberleşirler. Tanımlanmış bir türdeki mesaj akışları için bir isimdir. ROS'un graf yapısında düğümlerin arasındaki kenarlardır. Örneğin; lazer mesafe ölçerin verisi `LaserScan` mesaj tipiyle `scan` isimli bir topic'e gönderilebilir. Kamera verisi `Image` mesaj tipiyle `image` isimli bir topic'e gönderilebilir. Topic'ler dağıtılmış sistemlerdeki en yaygın veri değişim yollarından biri olan yayınlama/dinleme iletişim mekanizmasını gerçekleştirir.
