@@ -98,3 +98,7 @@ ROS sistemindeki <b>düğüm</b>ler birbirleriyle <b>topic</b>'ler aracılığı
 # ROS Publisher Nedir?
 
 <b>Publisher</b>, mesaj yayınlayan düğüm çeşididir.
+
+# ROS Core Nedir?
+
+<b>roscore</b>, ROS tabanlı bir sistemin önkoşulları olan düğüm ve programların koleksiyonudur. Düğümlerin mesajlarını birbirlerine iletebilmeleri için gerekli olan bağlantı bilgisini sağlayan servistir. <b>roscore</b> olmadan düğümler birbirini bulamaz. Her düğüm, yayınladığı mesaj akışlarını ve abone olmak istediği akışları kaydetmek için ilk açılışta <b>roscore</b>'a bağlanır.
