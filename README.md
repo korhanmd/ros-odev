@@ -94,3 +94,7 @@ Bu <b>düğüm</b>ler hakkındaki bilgileri görüntülemek için `rosnode` komu
 # ROS Topic Nedir?
 
 ROS sistemindeki <b>düğüm</b>ler birbirleriyle <b>topic</b>'ler aracılığıyla haberleşirler. Tanımlanmış bir türdeki mesaj akışları için bir isimdir. ROS'un graf yapısında düğümlerin arasındaki kenarlardır. Örneğin; lazer mesafe ölçerin verisi `LaserScan` mesaj tipiyle `scan` isimli bir topic'e gönderilebilir. Kamera verisi `Image` mesaj tipiyle `image` isimli bir topic'e gönderilebilir. Topic'ler dağıtılmış sistemlerdeki en yaygın veri değişim yollarından biri olan yayınlama/dinleme iletişim mekanizmasını gerçekleştirir.
+
+# ROS Publisher Nedir?
+
+<b>Publisher</b>, mesaj yayınlayan düğüm çeşididir.
