@@ -83,3 +83,10 @@ Komutun döndürmesi beklenen sonuç şudur:
 ```
 /home/<username>/catkin_ws/src:/opt/ros/kinetic/share
 ```
+
+# ROS Node Nedir?
+
+<b>Node</b>, (düğüm) ROS'ta hesaplama yapan bir işlemdir. Basit olarak, ROS paketi içindeki çalıştırılabilir bir dosyadır. Bu düğümler akış topic'leri, RPC servisleri ve parametre sunucusu kullanarak birbirleriyle haberleşirler.
+Bir robot kontrol sistemi genellikle birçok düğümden meydana gelir. Örneğin; lazer mesafe ölçeri kontrol eden düğüm, robotun tekerlek motorlarını kontrol eden düğüm vs.
+
+Bu <b>düğüm</b>ler hakkındaki bilgileri görüntülemek için `rosnode` komutu kullanılır. Bu komut info, kill, list gibi parametreler alır.
