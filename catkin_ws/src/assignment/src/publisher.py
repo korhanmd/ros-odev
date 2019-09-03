@@ -4,11 +4,21 @@
 import rospy
 from std_msgs.msg import String
 
+def checkNum(num):
+	try:
+		val = int(num)
+	except ValueError:
+		return False
+	return True
+
 name = raw_input("Ad Soyad: ")
 
-no = 501831001
+no = raw_input("Öğrenci Numarası: ")
 
-n_loop = no%10
+while not checkNum(no):
+	no = raw_input("Girdi sayı değil! Öğrenci numarası: ")
+
+n_loop = int(no)%10
 
 rospy.init_node('publisher')
 
