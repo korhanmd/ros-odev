@@ -4,7 +4,8 @@
 import rospy
 from std_msgs.msg import String
 
-name = "Korhan Mutludogan"
+name = raw_input("Ad Soyad: ")
+
 no = 501831001
 
 n_loop = no%10
